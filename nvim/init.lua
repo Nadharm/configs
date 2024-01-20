@@ -21,6 +21,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup("plugins")
+require('oil').setup()
 
 vim.cmd.colorscheme "catppuccin-macchiato"
 

@@ -4,7 +4,7 @@
 
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
-vim.o.expandtab = false 
+vim.o.expandtab = false
 
 vim.o.scrolloff = 15
 vim.o.hlsearch = true -- Set highlight on search
@@ -19,12 +19,15 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.wo.signcolumn = 'yes' -- Keep signcolumn on by default
+vim.wo.relativenumber = true
+
+-- Highlight current line
+vim.o.cursorline = true
 
 -- Decrease update time
-vim.o.updatetime = 250 
+vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
-vim.o.completeopt = 'menuone,noselect' -- Set completeopt to have a better completion experience
 vim.o.termguicolors = true -- NOTE: You should make sure your terminal supports this
 
 -- [[ Highlight on yank ]]
