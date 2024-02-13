@@ -6,3 +6,4 @@ rm -rf ~/.local/state/nvim
 
 cp -r ./nvim ~/.config/nvim
 cp ./tmux/tmux.conf ~/.tmux.conf
+cp -r ./tmux/tmux_dir ~/.tmux
