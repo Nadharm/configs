@@ -28,6 +28,15 @@ return {
             ['<C-d>'] = false,
           },
         },
+        ripgrep_arguments = {
+          'rg',
+          '--hidden',
+          '--no-heading',
+          '--with-filename',
+          '--line-number',
+          '--column',
+          '--smart-case'
+        },
       },
     }
 
