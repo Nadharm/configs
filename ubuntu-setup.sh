@@ -84,3 +84,11 @@ cp ./tmux/tmux.conf ~/.tmux.conf
 
 # Git
 git config --global core.editor "nvim"
+
+# Attempt to disable Super + N behavior and replace with window stuff
+for i in $(seq 1 9); do
+  gsettings set org.gnome.shell.keybindings switch-to-application-$i  []
+  gsettings set org.gnome.shell.keybindings open-new-window-application-$i  []
+done
+
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>1']"
